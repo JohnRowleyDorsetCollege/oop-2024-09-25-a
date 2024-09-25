@@ -1,5 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+
 using oop_2024_09_25_a.models;
+
 Console.WriteLine("Week 2: Inheritance");
 /// var hb = new HeroBase(); Abstract class, cannot use it directly
 var ap = new AlienPlant();

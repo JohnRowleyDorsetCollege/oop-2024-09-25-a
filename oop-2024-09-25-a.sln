@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oop-2024-09-25-a", "oop-2024-09-25-a.csproj", "{98A5C5AF-86D5-4A7E-839D-6DD16BCD8F54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superhero.Domain", "..\Superhero.Domain\Superhero.Domain.csproj", "{E4752510-666A-4B02-A3EC-888E92662F87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{98A5C5AF-86D5-4A7E-839D-6DD16BCD8F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98A5C5AF-86D5-4A7E-839D-6DD16BCD8F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98A5C5AF-86D5-4A7E-839D-6DD16BCD8F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4752510-666A-4B02-A3EC-888E92662F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4752510-666A-4B02-A3EC-888E92662F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4752510-666A-4B02-A3EC-888E92662F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4752510-666A-4B02-A3EC-888E92662F87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
