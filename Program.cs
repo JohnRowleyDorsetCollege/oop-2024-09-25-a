@@ -3,10 +3,19 @@ using oop_2024_09_25_a.models;
 
 Console.WriteLine("Inheritance");
 
-var hb = new HeroBase();
+/// var hb = new HeroBase(); Abstract class, cannot use it directly
 var ap = new AlienPlant();
+
+ap.Name = "Plant";
+ap.Alias = "Groot";
+
+
+
 var ah = new HumanAugmented();
+
+ah.Name = "Peter Parker";
+ah.Alias = "SpiderMan";
 
 Console.WriteLine(hb);
 Console.WriteLine(ap);
-Console.WriteLine(ah);
+Console.WriteLine(ah);   

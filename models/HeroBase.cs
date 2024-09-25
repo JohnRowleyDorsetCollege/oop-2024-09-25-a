@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace oop_2024_09_25_a.models
 {
-    public class HeroBase
+    public abstract class HeroBase
     {
+        public string Name { get; set; }
+        public string Alias { get; set; }
         public override string ToString()
         {
             return base.ToString();
@@ -26,7 +28,7 @@ namespace oop_2024_09_25_a.models
 
         public override string ToString()
         {
-            return "Alien";
+            return $"Alien";
         }
     }
 
@@ -34,7 +36,7 @@ namespace oop_2024_09_25_a.models
     {
         public override string ToString()
         {
-            return "HumanAugmented";
+            return $"HumanAugmented: {Name} : {Alias}";
         }
     }
 
@@ -42,8 +44,10 @@ namespace oop_2024_09_25_a.models
     {
         public override string ToString()
         {
-            return "AlienPlant";
+            return $"AlienPlant: : {Name} : {Alias}";
         }
+
+
     }
 
 }
