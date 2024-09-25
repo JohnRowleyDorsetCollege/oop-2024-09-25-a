@@ -8,8 +8,9 @@ namespace oop_2024_09_25_a.models
 {
     public abstract class HeroBase
     {
-        public string Name { get; set; }
-        public string Alias { get; set; }
+        // set strings to empty so they don't cause NULL crashes
+        public string Name { get; set; } = String.Empty;
+        public string Alias { get; set; } = String.Empty ;
 
         protected HeroBase()
         {
