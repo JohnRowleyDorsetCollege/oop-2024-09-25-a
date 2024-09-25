@@ -10,6 +10,17 @@ namespace oop_2024_09_25_a.models
     {
         public string Name { get; set; }
         public string Alias { get; set; }
+
+        protected HeroBase()
+        {
+            
+        }
+
+        protected HeroBase(string _name, string _alias) { 
+            Name = _name;
+            Alias = _alias;
+            
+        }
         public override string ToString()
         {
             return base.ToString();
@@ -19,6 +30,15 @@ namespace oop_2024_09_25_a.models
     // You can only inherit from one class (in c#)
     public class Human : HeroBase
     {
+        public Human()
+        {
+            
+        }
+
+        public Human(string _name, string _alias) : base(_name, _alias) 
+        {
+            
+        }
         public override string ToString()
         {
             return "Human";
@@ -27,7 +47,17 @@ namespace oop_2024_09_25_a.models
 
     public class Alien : HeroBase
     {
-
+        public Alien()
+        {
+            
+        }
+        // Inherit and pass the parameters up to the base class
+        public Alien(string _name, string _alias) :    base(_name, _alias)
+        {
+           
+            
+            
+        }
         public override string ToString()
         {
             return $"Alien";
@@ -36,6 +66,20 @@ namespace oop_2024_09_25_a.models
 
     public class HumanAugmented : Human
     {
+        // Constructor - code is run when the class is created 
+        public HumanAugmented()
+        {
+            Console.WriteLine("Creating a Human Augmented Class");
+        }
+
+        public HumanAugmented(string _name, string _alias) : base(_name, _alias) 
+        {
+           
+        }
+
+
+
+
         public override string ToString()
         {
             return $"HumanAugmented: {Name} : {Alias}";
@@ -44,6 +88,15 @@ namespace oop_2024_09_25_a.models
 
     public class AlienPlant : Alien
     {
+        public AlienPlant()
+        {
+            
+        }
+
+        public AlienPlant(string _name, string _alias) : base(_name, _alias) 
+        {
+            
+        }
         public override string ToString()
         {
             return $"AlienPlant: : {Name} : {Alias}";

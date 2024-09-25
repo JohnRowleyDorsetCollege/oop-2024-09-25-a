@@ -1,15 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using oop_2024_09_25_a.models;
-
-Console.WriteLine("Inheritance");
-
+Console.WriteLine("Week 2: Inheritance");
 /// var hb = new HeroBase(); Abstract class, cannot use it directly
 var ap = new AlienPlant();
 
 ap.Name = "Plant";
 ap.Alias = "Groot";
-
-
 
 var ah = new HumanAugmented();
 
@@ -24,8 +20,9 @@ var wolverine = new HumanAugmented()
 };
 
 
-
+var TheHulk = new HumanAugmented("David Banner", "The Hulk");
 
 Console.WriteLine(ap);
 Console.WriteLine(ah);
 Console.WriteLine(wolverine);
+Console.WriteLine(TheHulk);
