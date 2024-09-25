@@ -15,6 +15,8 @@ namespace oop_2024_09_25_a.models
             return base.ToString();
         }
     }
+    // The colon : indicates inheritance from another class
+    // You can only inherit from one class (in c#)
     public class Human : HeroBase
     {
         public override string ToString()

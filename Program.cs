@@ -16,6 +16,16 @@ var ah = new HumanAugmented();
 ah.Name = "Peter Parker";
 ah.Alias = "SpiderMan";
 
-Console.WriteLine(hb);
+// INSTANTIATE (create) the object and initialise it using {prop=value,prop=value}
+var wolverine = new HumanAugmented()
+{
+    Name = "Logan",
+    Alias = "Wolverine"
+};
+
+
+
+
 Console.WriteLine(ap);
-Console.WriteLine(ah);   
+Console.WriteLine(ah);
+Console.WriteLine(wolverine);
